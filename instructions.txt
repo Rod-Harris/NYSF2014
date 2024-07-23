@@ -2,6 +2,7 @@ Rojira Projects Structure
 
 [devel]/
 	lib/
+		<install dir for jars>
 		<jogl jars>
 		<jogl sos>
 		<jsi4, sigl, siren jars>
@@ -29,8 +30,16 @@ Rojira Projects Structure
 			xyz.jar -> ../../../lib/xyz.jar
 			xyz.jar -> ../../../lib/xyz.so 
 		resource/
+			JP5AppInfo
+			NYSF2014.conf
+			system1.conf
+			...
 		src/
-			
+		
+JP5AppInfo is a shell script that is sourced but the compile.sh script
+it has all the project specific variables for the jmake5 scripts to use	
+
+you can specify any number of systems to run symultaneously in the resources folder
 
 cd [devel]/Jsi4
 	../jmake5/compile.sh
@@ -47,3 +56,4 @@ cd [devel]/Siren
 cd [devel]/NYSF2014
 	../jmake5/compile.sh
 	../jmake5/run.sh
+	
