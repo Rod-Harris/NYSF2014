@@ -39,7 +39,7 @@ Rojira Projects Structure
 JP5AppInfo is a shell script that is sourced but the compile.sh script
 it has all the project specific variables for the jmake5 scripts to use	
 
-you can specify any number of systems to run symultaneously in the resources folder
+you can specify any number of systems to run simultaneously in the resources folder
 
 cd [devel]/Jsi4
 	../jmake5/compile.sh
