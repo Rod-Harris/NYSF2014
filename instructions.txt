@@ -1,0 +1,49 @@
+Rojira Projects Structure
+
+[devel]/
+	lib/
+		<jogl jars>
+		<jogl sos>
+		<jsi4, sigl, siren jars>
+	jmake5/
+		build.sh
+		compile.sh
+		clean.sh
+		run.sh
+		install-lib.sh
+	Jsi4/
+		resource/
+		src/
+	SiGL/
+		lib/
+			xyz.jar -> ../../../lib/xyz.jar
+		resource/
+		src/
+	Siren/
+		lib/
+			xyz.jar -> ../../../lib/xyz.jar
+		resource/
+		src/
+	NYSF2014/
+		lib/
+			xyz.jar -> ../../../lib/xyz.jar
+			xyz.jar -> ../../../lib/xyz.so 
+		resource/
+		src/
+			
+
+cd [devel]/Jsi4
+	../jmake5/compile.sh
+	../jmake5/install-lib.sh
+	
+cd [devel]/SiGL
+	../jmake5/compile.sh
+	../jmake5/install-lib.sh
+	
+cd [devel]/Siren
+	../jmake5/compile.sh
+	../jmake5/install-lib.sh
+	
+cd [devel]/NYSF2014
+	../jmake5/compile.sh
+	../jmake5/run.sh
