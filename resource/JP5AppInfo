@@ -1,0 +1,14 @@
+jp5pkg=nysf2014
+JP5Cls=NYSF2014
+JP5ENV=NYSF2014
+TARGET_DIR_PARENT="$HOME/tmp/devel/target/jp5-apps/$JP5Cls"
+JP5_APP_MAIN="rojira.$jp5pkg.NYSF2014"
+build_timestamp=-
+build=6
+version=Demo
+INSTALL_LIB_DIR="$HOME/devel/lib"
+DEPS_DIR="./lib"
+JAR_DEPS="$DEPS_DIR/gluegen-rt.jar:$DEPS_DIR/jogl.jar:$DEPS_DIR/jsi4.jar:$DEPS_DIR/sigl.jar:$DEPS_DIR/siren.jar"
+NATIVE_DEPS="$DEPS_DIR/libgluegen-rt.so:$DEPS_DIR/libjogl_awt.so:$DEPS_DIR/libjogl_cg.so:$DEPS_DIR/libjogl.so"
+MODULES=
+FX_OPTS=
